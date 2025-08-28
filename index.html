@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effortless Laundry, Delivered Clean. | LaundryMate</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+
+        .section-padding {
+            @apply py-16 px-4 sm:px-6 lg:px-8;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="#hero" class="flex-shrink-0 font-bold text-2xl text-indigo-600 rounded-lg">
+                        LaundryMate
+                    </a>
+                </div>
+                <!-- Navigation links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#how-it-works" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md font-medium transition-colors duration-300">How It Works</a>
+                        <a href="#services" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md font-medium transition-colors duration-300">Services</a>
+                        <a href="#pricing" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md font-medium transition-colors duration-300">Pricing</a>
+                        <a href="#testimonials" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md font-medium transition-colors duration-300">Testimonials</a>
+                        <a href="#contact" class="nav-link text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md font-medium transition-colors duration-300">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Icon when menu is closed -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Icon when menu is open -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#how-it-works" class="mobile-nav-link text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md font-medium transition-colors duration-300">How It Works</a>
+                    <a href="#services" class="mobile-nav-link text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md font-medium transition-colors duration-300">Services</a>
+                    <a href="#pricing" class="mobile-nav-link text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md font-medium transition-colors duration-300">Pricing</a>
+                    <a href="#testimonials" class="mobile-nav-link text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md font-medium transition-colors duration-300">Testimonials</a>
+                    <a href="#contact" class="mobile-nav-link text-gray-600 hover:text-indigo-600 block px-3 py-2 rounded-md font-medium transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-white section-padding text-center overflow-hidden">
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div class="text-center py-12">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4 animate-fade-in-up">
+                        Effortless Laundry, <br class="hidden sm:inline" /> Delivered Clean.
+                    </h1>
+                    <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl animate-fade-in-down">
+                        We handle your laundry with care, so you can focus on what matters. Fast, reliable, and convenient service right to your doorstep.
+                    </p>
+                    <div class="mt-8 flex justify-center">
+                        <a href="#order-now" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-300 shadow-lg">
+                            Schedule a Pickup
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="section-padding bg-gray-100">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">How It Works</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition-transform transform hover:scale-105 duration-300">
+                        <img src="https://placehold.co/250x250/b388ff/ffffff?text=Schedule+Pickup" alt="Calendar icon" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-xl font-bold mb-2">Schedule Pickup</h3>
+                        <p class="text-gray-600">Choose your services and a convenient time for us to pick up your laundry.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition-transform transform hover:scale-105 duration-300">
+                        <img src="https://placehold.co/250x250/ff88b3/ffffff?text=Clean+and+Fold" alt="Washing machine icon" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-xl font-bold mb-2">We Wash & Fold</h3>
+                        <p class="text-gray-600">Our experts clean, dry, and carefully fold your clothes with the highest care.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg transition-transform transform hover:scale-105 duration-300">
+                        <img src="https://placehold.co/250x250/88b3ff/ffffff?text=Fast+Delivery" alt="Delivery truck icon" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover">
+                        <h3 class="text-xl font-bold mb-2">Delivered Clean</h3>
+                        <p class="text-gray-600">Your fresh, clean laundry is delivered back to your home, ready to be put away.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">Our Services</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1: Wash & Fold -->
+                    <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/400x250/b388ff/ffffff?text=Wash+%26+Fold" alt="A basket full of laundry" class="rounded-2xl mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Wash & Fold</h3>
+                        <p class="text-gray-600 mb-4">Perfect for everyday laundry. We wash, dry, and fold your clothes.</p>
+                        <ul class="text-left text-gray-700 space-y-2">
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> High-quality detergents</li>
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> Separate loads for whites & colors</li>
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> Expert folding and packaging</li>
+                        </ul>
+                    </div>
+                    <!-- Service 2: Dry Cleaning -->
+                    <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/400x250/ff88b3/ffffff?text=Dry+Cleaning" alt="A freshly dry-cleaned suit" class="rounded-2xl mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Dry Cleaning</h3>
+                        <p class="text-gray-600 mb-4">Care for your delicate items and formal wear. Handled with professional care.</p>
+                        <ul class="text-left text-gray-700 space-y-2">
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> Professional stain removal</li>
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> Safe for all fabric types</li>
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> Ready to wear, no wrinkles</li>
+                        </ul>
+                    </div>
+                    <!-- Service 3: Special Care Items -->
+                    <div class="bg-gray-100 p-8 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/400x250/88b3ff/ffffff?text=Special+Care" alt="A neatly folded comforter" class="rounded-2xl mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Special Care</h3>
+                        <p class="text-gray-600 mb-4">For items requiring extra attention, like bedding, comforters, and curtains.</p>
+                        <ul class="text-left text-gray-700 space-y-2">
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> Comforters & duvets</li>
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> Curtains & drapes</li>
+                            <li><span class="text-indigo-600 font-bold mr-2">&bull;</span> Area rugs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section-padding bg-gray-100">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">Simple Pricing</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-2xl shadow-lg">
+                        <thead class="bg-gray-200">
+                            <tr>
+                                <th scope="col" class="py-3 px-6 text-left text-xs font-bold text-gray-500 uppercase tracking-wider rounded-tl-2xl">Service</th>
+                                <th scope="col" class="py-3 px-6 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Unit</th>
+                                <th scope="col" class="py-3 px-6 text-right text-xs font-bold text-gray-500 uppercase tracking-wider rounded-tr-2xl">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm font-medium text-gray-900">Wash & Fold</td>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm text-gray-500">per pound</td>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm text-gray-500 text-right">$1.50</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm font-medium text-gray-900">Dry Cleaning (Shirts)</td>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm text-gray-500">per item</td>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm text-gray-500 text-right">$5.00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm font-medium text-gray-900">Dry Cleaning (Pants)</td>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm text-gray-500">per item</td>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm text-gray-500 text-right">$7.00</td>
+                            </tr>
+                            <tr>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm font-medium text-gray-900">Comforter/Duvet</td>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm text-gray-500">per item</td>
+                                <td class="py-4 px-6 whitespace-nowrap text-sm text-gray-500 text-right">$20.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Now Section -->
+        <section id="order-now" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="bg-gray-100 p-8 sm:p-12 rounded-2xl shadow-lg">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-8">Schedule a Pickup</h2>
+                    <form id="orderForm" class="max-w-2xl mx-auto space-y-6">
+                        <!-- Full Name -->
+                        <div>
+                            <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 transition-all duration-300">
+                        </div>
+                        <!-- Email Address -->
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 transition-all duration-300">
+                        </div>
+                        <!-- Phone Number -->
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 transition-all duration-300">
+                        </div>
+                        <!-- Service Type -->
+                        <div>
+                            <label for="serviceType" class="block text-sm font-medium text-gray-700">Service Type</label>
+                            <select id="serviceType" name="serviceType" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 transition-all duration-300">
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="wash-fold">Wash & Fold</option>
+                                <option value="dry-cleaning">Dry Cleaning</option>
+                                <option value="special-care">Special Care Items</option>
+                            </select>
+                        </div>
+                        <!-- Special Instructions -->
+                        <div>
+                            <label for="instructions" class="block text-sm font-medium text-gray-700">Special Instructions</label>
+                            <textarea id="instructions" name="instructions" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 transition-all duration-300"></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <div>
+                            <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-300">
+                                Submit Order
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Confirmation message box -->
+                    <div id="confirmation-message" class="hidden mt-6 bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-lg" role="alert">
+                        <p class="font-bold">Order Confirmed!</p>
+                        <p>Thank you for your order. We will contact you shortly to confirm the details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section-padding bg-gray-100">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-8">What Our Customers Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"LaundryMate is a game-changer! My clothes have never been cleaner, and the pickup service is incredibly convenient."</p>
+                        <div class="font-semibold text-gray-900">- Jane D.</div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"Professional, fast, and reliable. I highly recommend their dry cleaning service for special care items. Flawless!"</p>
+                        <div class="font-semibold text-gray-900">- Mark S.</div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"I used to dread laundry day, but now it's a breeze. They handle everything with great care and attention to detail."</p>
+                        <div class="font-semibold text-gray-900">- Emily W.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="bg-gray-100 p-8 sm:p-12 rounded-2xl shadow-lg">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-8">Get In Touch</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Contact Form -->
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="contactName" class="block text-sm font-medium text-gray-700">Name</label>
+                                <input type="text" id="contactName" name="contactName" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="contactEmail" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="contactMessage" class="block text-sm font-medium text-gray-700">Message</label>
+                                <textarea id="contactMessage" name="contactMessage" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 transition-all duration-300"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-300">
+                                    Send Message
+                                </button>
+                            </div>
+                            <div id="contact-confirmation-message" class="hidden mt-6 bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-lg" role="alert">
+                                <p class="font-bold">Message Sent!</p>
+                                <p>We have received your message and will get back to you soon.</p>
+                            </div>
+                        </form>
+                        <!-- Contact Info -->
+                        <div class="space-y-6 mt-8 md:mt-0">
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Address</h3>
+                                <p class="text-gray-600">123 Clean Street, Suite 456<br>San Francisco, CA 94103</p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Phone</h3>
+                                <p class="text-gray-600">(123) 456-7890</p>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-gray-900">Email</h3>
+                                <p class="text-gray-600">info@laundrymate.com</p>
+                            </div>
+                            <div class="flex space-x-4">
+                                <!-- Social Media Links (placeholders) -->
+                                <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-indigo-600 transition-colors duration-300">
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 10H17V13H14V22H11V13H8V10H11V7C11 4.5 12.5 3 15 3H17V6H15.5C14.1 6 14 6.7 14 7.5V10Z" /></svg>
+                                </a>
+                                <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-indigo-600 transition-colors duration-300">
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.46 6c-.77.34-1.6.57-2.47.67.88-.53 1.56-1.37 1.88-2.37-.83.49-1.75.85-2.73 1.05-1.55-1.65-4.14-1.12-4.9.43-.63 1.25-.5 2.87.27 4.14-2.27-.11-4.3-1.2-5.7-2.9-1.2 2.05-.6 4.7 1.45 5.95-.58-.02-1.12-.18-1.6-.45v.06c0 1.76 1.25 3.23 2.9 3.56-.3.08-.62.13-.95.13-.23 0-.46-.02-.68-.07.46 1.45 1.8 2.5 3.4 2.53-1.4 1.1-3.17 1.8-5.06 1.8-.33 0-.66-.02-.98-.06 1.8 1.15 3.93 1.82 6.22 1.82 7.42 0 11.45-6.14 11.45-11.45 0-.17-.0-.34-.01-.51.78-.56 1.45-1.26 1.98-2.05z" /></svg>
+                                </a>
+                                <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-indigo-600 transition-colors duration-300">
+                                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.33 4.25c-.75 0-1.36.6-1.36 1.34 0 .74.6 1.35 1.36 1.35s1.36-.6 1.36-1.35c0-.74-.61-1.34-1.36-1.34zm-6.66.01c-.75 0-1.36.6-1.36 1.35 0 .74.6 1.35 1.36 1.35s1.36-.6 1.36-1.35c0-.74-.61-1.35-1.36-1.35zM12 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm-5.6 7.63c.2.04.4.07.61.1.2.03.4.05.61.05h1.22c.22 0 .43-.02.64-.06.21-.04.41-.09.61-.15.4-.11.75-.28 1.05-.49.3-.21.57-.45.81-.72.24-.27.45-.55.63-.86.18-.3.32-.61.43-.94.11-.33.19-.67.24-1.01.05-.34.07-.69.07-1.04v-1.22c0-.21-.02-.42-.05-.62-.03-.2-.07-.4-.12-.6zm8.12 1.41c-.2.04-.4.07-.61.1-.2.03-.4.05-.61.05h-1.22c-.22 0-.43-.02-.64-.06-.21-.04-.41-.09-.61-.15-.4-.11-.75-.28-1.05-.49-.3-.21-.57-.45-.81-.72-.24-.27-.45-.55-.63-.86-.18-.3-.32-.61-.43-.94-.11-.33-.19-.67-.24-1.01-.05-.34-.07-.69-.07-1.04v-1.22c0-.21.02-.42.05-.62.03-.2.07-.4.12-.6zm0-10.42c-.2-.04-.4-.07-.61-.1-.2-.03-.4-.05-.61-.05h-1.22c-.22 0-.43.02-.64.06-.21.04-.41.09-.61.15-.4.11-.75.28-1.05.49-.3.21-.57.45-.81.72-.24.27-.45.55-.63.86-.18.3-.32.61-.43.94-.11.33-.19.67-.24 1.01-.05.34-.07.69-.07 1.04v1.22c0 .21.02.42.05.62.03.2.07.4.12.6zM12 5.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5 6.5-2.91 6.5-6.5-2.91-6.5-6.5-6.5zm0 11c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5 4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5zm5.5-1.5c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5 4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5zM12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" /></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white section-padding text-center">
+        <p class="text-gray-400">&copy; <span id="current-year"></span> LaundryMate. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the current year for the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+
+                // Hide mobile menu after clicking a link
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu.classList.contains('block')) {
+                    mobileMenu.classList.remove('block');
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+
+        // Handle order form submission
+        const orderForm = document.getElementById('orderForm');
+        const orderConfirmationMessage = document.getElementById('confirmation-message');
+
+        orderForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Simple validation
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const serviceType = document.getElementById('serviceType').value;
+
+            if (!fullName || !email || !phone || !serviceType) {
+                // In a real application, you'd show a more user-friendly error message.
+                console.error('Please fill out all required fields.');
+                return;
+            }
+
+            // Simulate form submission
+            console.log('Order Submitted:', {
+                fullName,
+                email,
+                phone,
+                serviceType,
+                instructions: document.getElementById('instructions').value
+            });
+
+            // Show confirmation message
+            orderConfirmationMessage.classList.remove('hidden');
+            
+            // Optionally, clear the form after submission
+            orderForm.reset();
+
+            // Hide the message after a few seconds
+            setTimeout(() => {
+                orderConfirmationMessage.classList.add('hidden');
+            }, 5000);
+        });
+
+        // Handle contact form submission
+        const contactForm = document.getElementById('contactForm');
+        const contactConfirmationMessage = document.getElementById('contact-confirmation-message');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Contact message submitted!');
+            contactForm.reset();
+            contactConfirmationMessage.classList.remove('hidden');
+            setTimeout(() => {
+                contactConfirmationMessage.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
